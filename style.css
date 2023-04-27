@@ -1,0 +1,10 @@
+body {
+    background-color: grey;
+    color: white;
+    font-family: 'VT323', monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
