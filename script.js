@@ -42,3 +42,7 @@ function checkTime() {
         document.getElementById(`result`).innerHTML = `Game Over!`;
     }
 }
+
+function refreshPage(){
+    window.location.reload();
+} 
