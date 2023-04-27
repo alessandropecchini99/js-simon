@@ -15,10 +15,6 @@ div {
 }
 
 img {
-    width: 90px;
-}
-
-.prova {
     width: 2000px;
     aspect-ratio: 2 / 1;
 }
@@ -44,8 +40,4 @@ span {
     border-radius: 20px;
     padding: 5px 15px;
     margin-top: 1em;
-}
-
-.button-resfresh:hover {
-    background-color: rgb(128, 15, 15)
 }

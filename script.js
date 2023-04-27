@@ -13,19 +13,19 @@ const countDownDate = new Date(`Apr 28, 2023 09:30:00`).getTime();
 console.log(countDownDate);
 
 // 2. SET COUNTDOWN
-let x = setInterval(checkTime, 1000);
+let x = setInterval(checkTime(countDownDate), 1000);
 
 
 // ------------------------------
 
 
 // FUNCTION
-function checkTime() {
+function checkTime(countdown) {
     // 3. DATA DI OGGI
     let now = new Date().getTime();
     
     // Tempo mancante tra l'ora attuale e l'ora di arrivo
-    let distanza = countDownDate - now;
+    let distanza = countdown - now;
 
     // calcolo il tempo
     let days = Math.floor(distanza / (1000 * 60 * 60 * 24));
@@ -39,10 +39,6 @@ function checkTime() {
     // scrivo un testo se il countdown finisce!
     if (distanza < 0) {
         clearInterval(x);
-        document.getElementById(`result`).innerHTML = `Lezione inizata!`;
+        document.getElementById(`result`).innerHTML = `Game Over!`;
     }
 }
-
-function refreshPage(){
-    window.location.reload();
-} 
