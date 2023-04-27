@@ -31,13 +31,3 @@ h1 {
 span {
     font-size: 0.55em;
 }
-
-.button-resfresh {
-    background-color: #E70012;
-    color: white;
-    font-size: 2em;
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 5px 15px;
-    margin-top: 1em;
-}

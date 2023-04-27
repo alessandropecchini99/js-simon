@@ -13,25 +13,25 @@ const countDownDate = new Date(`Apr 28, 2023 09:30:00`).getTime();
 console.log(countDownDate);
 
 // 2. SET COUNTDOWN
-let x = setInterval(checkTime(countDownDate), 1000);
+let x = setInterval(checkTime, 1000);
 
 
 // ------------------------------
 
 
 // FUNCTION
-function checkTime(countdown) {
+function checkTime() {
     // 3. DATA DI OGGI
-    let now = new Date().getTime();
+    const now = new Date().getTime();
     
     // Tempo mancante tra l'ora attuale e l'ora di arrivo
-    let distanza = countdown - now;
+    const distanza = countDownDate - now;
 
     // calcolo il tempo
-    let days = Math.floor(distanza / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((distanza % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((distanza % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((distanza % (1000 * 60)) / 1000);
+    const days = Math.floor(distanza / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distanza % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distanza % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distanza % (1000 * 60)) / 1000);
         
     // 4. MOSTRO A SCERMO IL COUNTDOWN
     document.getElementById(`result`).innerHTML = `TEMPO RIMANENTE` + `<br>` + `< ` + days + `:` + hours + `:` + minutes + `:` + seconds + ` >`;
