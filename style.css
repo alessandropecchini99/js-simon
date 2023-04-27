@@ -1,10 +1,51 @@
 body {
-    background-color: grey;
-    color: white;
+    background-color: #E70012;
+    color: #3D5301;
     font-family: 'VT323', monospace;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+div {
+    width: fit-content;
+    position: relative;
+}
+
+img {
+    width: 90px;
+}
+
+.prova {
+    width: 2000px;
+    aspect-ratio: 2 / 1;
+}
+
+
+h1 {
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+span {
+    font-size: 0.55em;
+}
+
+.button-resfresh {
+    background-color: #E70012;
+    color: white;
+    font-size: 2em;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-top: 1em;
+}
+
+.button-resfresh:hover {
+    background-color: rgb(128, 15, 15)
 }

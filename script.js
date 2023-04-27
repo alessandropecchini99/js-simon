@@ -34,7 +34,7 @@ function checkTime() {
     let seconds = Math.floor((distanza % (1000 * 60)) / 1000);
         
     // 4. MOSTRO A SCERMO IL COUNTDOWN
-    document.getElementById(`result`).innerHTML = `< ` + days + ` - ` + hours + ` - ` + minutes + ` - ` + seconds + ` >`;
+    document.getElementById(`result`).innerHTML = `TEMPO RIMANENTE` + `<br>` + `< ` + days + `:` + hours + `:` + minutes + `:` + seconds + ` >`;
         
     // scrivo un testo se il countdown finisce!
     if (distanza < 0) {
@@ -42,3 +42,7 @@ function checkTime() {
         document.getElementById(`result`).innerHTML = `Lezione inizata!`;
     }
 }
+
+function refreshPage(){
+    window.location.reload();
+} 
