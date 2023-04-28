@@ -9,7 +9,7 @@
 
 
 // 1. ORARIO A CUI VOGLIO ARRIVARE
-const countDownDate = new Date(`Apr 28, 2023 09:30:00`).getTime();
+const countDownDate = new Date(`2023-04-28T13:00:00`).getTime();
 console.log(countDownDate);
 
 // 2. SET COUNTDOWN
